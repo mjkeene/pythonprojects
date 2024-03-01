@@ -46,3 +46,18 @@ ChatGPT is lightyears ahead of (untrained) chatterbot for parsing event queries 
 For more complex requests, this doesn't work perfectly, but it'll do for now.
 
 ![Screen Shot 2024-02-29 at 6 55 14 PM](https://github.com/mjkeene/pythonprojects/assets/48185875/242022ec-98c9-41a8-a00f-45319fd99d15)
+
+
+This project will probably take ~1 week to get a working prototype
+
+# Next steps:
+- [ ] Take more time to come up with a logical plan for next steps. Some obvious ones listed below.
+- [ ] Configure robotic SMS phone number from AWS (I started doing this a while back but it is now heavily regulated, so this may take a while).
+- [ ] Incoming texts to that phone number need to trigger the chatGPT API to parse them, and then store the event/timestamp in a database
+- [ ] Send confirmation text after this is completed with the event/reminder time.
+- [ ] Will there be a way to cancel a reminder? Not an essential feature yet. What about editing reminders?
+- [ ] Design the database / system to actually send out the notifications.
+- [ ] How much will this cost in AWS server fees and ChatGPT API call fees?
+- [ ] Limit user's texting to X per minute, Y per hour, and Z per day if this is an actual cloud service (it's going through GPT API anyway, so needs some kind of limiting).
+- [ ] 
+

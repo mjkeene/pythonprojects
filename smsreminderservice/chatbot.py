@@ -10,7 +10,8 @@ chatbot = ChatBot(
 	"EmailReminderBot",
 	logic_adapters=[
 		"chatterbot.logic.MathematicalEvaluation",
-		"chatterbot.logic.TimeLogicAdapter"
+		"chatterbot.logic.TimeLogicAdapter",
+		"chatterbot.logic.BestMatch"
 	]
 )
 

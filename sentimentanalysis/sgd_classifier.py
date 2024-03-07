@@ -2,6 +2,8 @@
 import numpy as np
 import re
 from nltk.corpus import stopwords
+from sklearn.feature_extraction.text import HashingVectorizer
+from sklearn.linear_model import SGDClassifier
 
 stop = stopwords.words('english')
 
@@ -31,8 +33,6 @@ def get_minibatch(doc_stream, size):
         return None, None
     return docs, y
 
-from sklearn.feature_extraction.text import HashingVectorizer
-from sklearn.linear_model import SGDClassifier
 
 vect = HashingVectorizer(decode_error='ignore',
                          n_features=2**21,
